@@ -1,0 +1,204 @@
+{
+	"courses": [
+		{
+			"id": 1,
+			"title": "Video Editing",
+			"description": "Learn the basics and advanced techniques of video editing using popular software.",
+			"duration": "10 weeks",
+			"instructor": "John Doe",
+			"category": "Multimedia",
+			"isFeatured": true,
+			"price": 3500
+		},
+		{
+			"id": 2,
+			"title": "Graphic Designing",
+			"description": "Master the art of graphic designing with tools like Adobe Photoshop and Illustrator.",
+			"duration": "8 weeks",
+			"instructor": "Jane Smith",
+			"category": "Design",
+			"isFeatured": true,
+			"price": 4000
+		},
+		{
+			"id": 3,
+			"title": "Full Stack Development",
+			"description": "Become a full stack developer by learning both frontend and backend technologies.",
+			"duration": "12 weeks",
+			"instructor": "Alice Johnson",
+			"category": "Development",
+			"isFeatured": true,
+			"price": 4500
+		},
+		{
+			"id": 4,
+			"title": "Backend Development",
+			"description": "Specialize in backend development with a focus on server-side technologies.",
+			"duration": "10 weeks",
+			"instructor": "Bob Brown",
+			"category": "Development",
+			"isFeatured": true,
+			"price": 3000
+		},
+		{
+			"id": 5,
+			"title": "Digital Marketing",
+			"description": "Learn the strategies and tools for effective digital marketing.",
+			"duration": "6 weeks",
+			"instructor": "Emily White",
+			"category": "Marketing",
+			"isFeatured": false,
+			"price": 2500
+		},
+		{
+			"id": 6,
+			"title": "Data Science",
+			"description": "Dive into data science with Python, R, and machine learning techniques.",
+			"duration": "14 weeks",
+			"instructor": "Chris Green",
+			"category": "Data Science",
+			"isFeatured": false,
+			"price": 4800
+		},
+		{
+			"id": 7,
+			"title": "Cybersecurity",
+			"description": "Understand the fundamentals of cybersecurity and how to protect systems.",
+			"duration": "10 weeks",
+			"instructor": "David Black",
+			"category": "Security",
+			"isFeatured": true,
+			"price": 3700
+		},
+		{
+			"id": 8,
+			"title": "Mobile App Development",
+			"description": "Create mobile applications for Android and iOS using modern frameworks.",
+			"duration": "12 weeks",
+			"instructor": "Laura Blue",
+			"category": "Development",
+			"isFeatured": false,
+			"price": 4200
+		},
+		{
+			"id": 9,
+			"title": "Artificial Intelligence",
+			"description": "Explore the world of AI and machine learning with practical projects.",
+			"duration": "15 weeks",
+			"instructor": "Michael Brown",
+			"category": "AI",
+			"isFeatured": false,
+			"price": 4900
+		},
+		{
+			"id": 10,
+			"title": "Cloud Computing",
+			"description": "Learn about cloud services and how to deploy applications on the cloud.",
+			"duration": "10 weeks",
+			"instructor": "Sarah White",
+			"category": "Cloud",
+			"isFeatured": false,
+			"price": 3600
+		},
+		{
+			"id": 11,
+			"title": "Blockchain Technology",
+			"description": "Understand blockchain technology and its applications in various industries.",
+			"duration": "8 weeks",
+			"instructor": "James Grey",
+			"category": "Technology",
+			"isFeatured": false,
+			"price": 3400
+		},
+		{
+			"id": 12,
+			"title": "UI/UX Design",
+			"description": "Design user-friendly interfaces and improve user experience.",
+			"duration": "9 weeks",
+			"instructor": "Anna Green",
+			"category": "Design",
+			"isFeatured": true,
+			"price": 3800
+		},
+		{
+			"id": 13,
+			"title": "Game Development",
+			"description": "Learn to develop games using Unity and Unreal Engine.",
+			"duration": "12 weeks",
+			"instructor": "Tom Red",
+			"category": "Development",
+			"isFeatured": false,
+			"price": 4700
+		},
+		{
+			"id": 14,
+			"title": "Project Management",
+			"description": "Master project management techniques and tools.",
+			"duration": "7 weeks",
+			"instructor": "Nancy Yellow",
+			"category": "Management",
+			"isFeatured": false,
+			"price": 2900
+		},
+		{
+			"id": 15,
+			"title": "Business Analytics",
+			"description": "Analyze business data to make informed decisions.",
+			"duration": "10 weeks",
+			"instructor": "Kevin Blue",
+			"category": "Business",
+			"isFeatured": false,
+			"price": 4100
+		},
+		{
+			"id": 16,
+			"title": "Content Writing",
+			"description": "Improve your writing skills for various types of content.",
+			"duration": "6 weeks",
+			"instructor": "Olivia Pink",
+			"category": "Writing",
+			"isFeatured": false,
+			"price": 2700
+		},
+		{
+			"id": 17,
+			"title": "Photography",
+			"description": "Learn the art and techniques of photography.",
+			"duration": "8 weeks",
+			"instructor": "Peter Purple",
+			"category": "Art",
+			"isFeatured": false,
+			"price": 3200
+		},
+		{
+			"id": 18,
+			"title": "Financial Analysis",
+			"description": "Understand financial statements and perform financial analysis.",
+			"duration": "9 weeks",
+			"instructor": "Rachel Orange",
+			"category": "Finance",
+			"isFeatured": false,
+			"price": 3900
+		},
+		{
+			"id": 19,
+			"title": "Public Speaking",
+			"description": "Enhance your public speaking and presentation skills.",
+			"duration": "5 weeks",
+			"instructor": "Sam Silver",
+			"category": "Communication",
+			"isFeatured": false,
+			"price": 2600
+		},
+		{
+			"id": 20,
+			"title": "Machine Learning",
+			"description": "Dive deep into machine learning algorithms and applications.",
+			"duration": "14 weeks",
+			"instructor": "Sophia Gold",
+			"category": "AI",
+			"isFeatured": false,
+			"price": 4500
+		}
+	]
+}
