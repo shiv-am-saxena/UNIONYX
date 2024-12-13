@@ -20,7 +20,7 @@ export function Hero() {
 				className="relative flex flex-col gap-4 items-center justify-center px-4">
 				<div className="w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:p-0">
 					<div className="p-4 md:mt-20 relative z-10 w-full flex flex-col items-center text-center gap-10">
-						<h1 className="md:text-9xl text-5xl font-bold bg-gradient-to-br from-slate-50 to-slate-500 tracking-wide bg-clip-text text-transparent font-[montserrat]">UNIONYX</h1>
+						<h1 className="md:text-9xl text-6xl font-[800] bg-gradient-to-br from-slate-50 to-slate-500 tracking-wider bg-clip-text text-transparent font-montserrat">UNIONYX</h1>
 						<h1 className="md:text-7xl text-2xl  text-transparent bg-clip-text bg-gradient-to-b font-bold from-neutral-50 to-neutral-400 p-4">Master the Art of Development</h1>
 						<p className="w-2/3 font-semibold text-base md:text-lg text-neutral-400 max-w-3xl mx-auto">
 							Dive into our comprehensive <i className="font-mono text-neutral-200">Video Editing, Fullstack Development & Graphic Designing courses</i> and transform your career journey

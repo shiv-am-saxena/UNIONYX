@@ -22,7 +22,7 @@ export default function Navbar() {
 		<nav className="h-20 w-full sticky top-0 z-[1000] shadow-md bg-[#18181b]">
 			<div className="flex justify-between items-center px-5 lg:px-20 py-4">
 				{/* Logo */}
-				<h1 className="text-2xl font-[montserrat] font-bold tracking-wide text-white md:text-4xl">UNIONYX</h1>
+				<h1 className="text-2xl font-montserrat font-bold tracking-wide text-white md:text-4xl">UNIONYX</h1>
 
 				{/* Lottie Menu Button for Mobile */}
 				<div onClick={() => setIsOpen(!isOpen)} className="cursor-pointer md:hidden" style={{ width: "50px" }}>

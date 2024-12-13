@@ -13,6 +13,11 @@ type Testimonial = {
 };
 export const AnimatedTestimonials = ({ testimonials, autoplay = false }: { testimonials: Testimonial[]; autoplay?: boolean }) => {
 	const [active, setActive] = useState(0);
+	const [hasMounted, setHasMounted] = useState(false);
+
+	useEffect(() => {
+		setHasMounted(true);
+	}, []);
 
 	const handleNext = () => {
 		setActive((prev) => (prev + 1) % testimonials.length);
@@ -36,6 +41,11 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }: { testi
 	const randomRotateY = () => {
 		return Math.floor(Math.random() * 21) - 10;
 	};
+
+	if (!hasMounted) {
+		return null; // Avoid rendering until the component is mounted
+	}
+
 	return (
 		<div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
 			<div className="relative grid grid-cols-1 md:grid-cols-2  gap-20">
@@ -44,7 +54,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }: { testi
 						<AnimatePresence>
 							{testimonials.map((testimonial, index) => (
 								<motion.div
-									key={testimonial.src}
+									key={index}
 									initial={{
 										opacity: 0,
 										scale: 0.9,
@@ -70,7 +80,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }: { testi
 										ease: "easeInOut",
 									}}
 									className="absolute inset-0 origin-bottom">
-									<Image src={testimonial.src} alt={testimonial.name} width={500} height={500} draggable={false} className="h-full w-full rounded-3xl object-cover object-center" />
+									<Image src={testimonial.src} alt={testimonial.name} width={500} height={500} draggable={false} className="h-full w-full rounded-3xl object-cover object-center" onError={(e)=>("Failed to load image")} />
 								</motion.div>
 							))}
 						</AnimatePresence>

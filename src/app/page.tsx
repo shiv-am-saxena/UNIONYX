@@ -7,7 +7,6 @@ import React from "react";
 export default function page() {
 	return (
 		<main className="bg-[#121212] flex flex-col gap-0">
-			<Navbar />
 			<Hero />
 			<FeaturedCourses />
 			<Testimonials/>
