@@ -26,7 +26,13 @@ export default function Navbar() {
 
 				{/* Lottie Menu Button for Mobile */}
 				<div onClick={() => setIsOpen(!isOpen)} className="cursor-pointer md:hidden" style={{ width: "50px" }}>
-					<Lottie animationData={animationData} loop={false} autoplay={false} speed={1.5} direction={isOpen ? 1 : -1} />
+					<Lottie
+						animationData={animationData as unknown} // Ensure TypeScript knows it's valid data
+						loop={false}
+						autoplay={false}
+						animationSpeed={1.5}
+						animationDirection={isOpen ? 1 : -1}
+					/>
 				</div>
 
 				{/* Links for Desktop */}
@@ -44,7 +50,10 @@ export default function Navbar() {
 			</div>
 
 			{/* Mobile Menu */}
-			<div className={`flex flex-col items-center -mt-1 bg-[#121212b9] backdrop-blur-lg text-white transition-all duration-300 overflow-hidden ${isOpen ? "max-h-[500px] py-5" : "max-h-0"} md:hidden`}>
+			<div
+				className={`flex flex-col items-center -mt-1 bg-[#121212b9] backdrop-blur-lg text-white transition-all duration-300 overflow-hidden ${
+					isOpen ? "max-h-[500px] py-5" : "max-h-0"
+				} md:hidden`}>
 				{navLinks.map((elem, ind) => (
 					<Link
 						href={elem.slug}
