@@ -1,6 +1,5 @@
 import FeaturedCourses from "@/components/FeaturedCourses";
 import { Hero } from "@/components/Hero";
-import Navbar from "@/components/Navbar";
 import { Testimonials } from "@/components/Testimonials";
 import React from "react";
 
