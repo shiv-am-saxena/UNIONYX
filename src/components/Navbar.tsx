@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
-import animationData from "@/../public/menu.json";
-import Lottie from "lottie-react";
+import React, { useRef, useState } from "react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false); // Toggle for the mobile menu
@@ -18,6 +17,19 @@ export default function Navbar() {
 		{ name: "Login", slug: "/login", isActive: true },
 	];
 
+	// Properly typing the ref
+	const dotLottieRef = useRef<DotLottieReact | null>(null);
+
+	const dotLottieRefCallback = (lottie: DotLottieReact | null) => {
+		dotLottieRef.current = lottie;
+	};
+
+	function play() {
+		if (dotLottieRef.current) {
+			dotLottieRef.current.play();
+		}
+	}
+
 	return (
 		<nav className="h-20 w-full sticky top-0 z-[1000] shadow-md bg-[#18181b]">
 			<div className="flex justify-between items-center px-5 lg:px-20 py-4">
@@ -25,13 +37,15 @@ export default function Navbar() {
 				<h1 className="text-2xl font-montserrat font-bold tracking-wide text-white md:text-4xl">UNIONYX</h1>
 
 				{/* Lottie Menu Button for Mobile */}
-				<div onClick={() => setIsOpen(!isOpen)} className="cursor-pointer md:hidden" style={{ width: "50px" }}>
-					<Lottie
-						animationData={animationData as unknown} // Ensure TypeScript knows it's valid data
-						loop={false}
-						autoplay={false}
-						animationSpeed={1.5}
-						animationDirection={isOpen ? 1 : -1}
+				<div onClick={() => setIsOpen(!isOpen)} className="cursor-pointer md:hidden" style={{ width: "50px", height: "50px" }}>
+					<DotLottieReact
+						ref={dotLottieRefCallback}
+						src="https://lottie.host/a2a56b61-73e4-462a-bbc2-05df3403825e/Q4DOP4n7fM.lottie"
+						loop={true} // Add loop to make it loop
+						autoplay={false} // Turn off autoplay to control it manually
+						mode={isOpen ? "forward" : "reverse"}
+						onClick={play} // Trigger play on click
+						backgroundColor="#ffffff"
 					/>
 				</div>
 
