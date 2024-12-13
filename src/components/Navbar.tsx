@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -17,12 +18,8 @@ export default function Navbar() {
 		{ name: "Login", slug: "/login", isActive: true },
 	];
 
-	// Properly typing the ref
-	const dotLottieRef = useRef<DotLottieReact | null>(null);
-
-	const dotLottieRefCallback = (lottie: DotLottieReact | null) => {
-		dotLottieRef.current = lottie;
-	};
+	// Using any for the ref type
+	const dotLottieRef = useRef<any>(null);
 
 	function play() {
 		if (dotLottieRef.current) {
@@ -33,23 +30,18 @@ export default function Navbar() {
 	return (
 		<nav className="h-20 w-full sticky top-0 z-[1000] shadow-md bg-[#18181b]">
 			<div className="flex justify-between items-center px-5 lg:px-20 py-4">
-				{/* Logo */}
 				<h1 className="text-2xl font-montserrat font-bold tracking-wide text-white md:text-4xl">UNIONYX</h1>
-
-				{/* Lottie Menu Button for Mobile */}
 				<div onClick={() => setIsOpen(!isOpen)} className="cursor-pointer md:hidden" style={{ width: "50px", height: "50px" }}>
 					<DotLottieReact
-						ref={dotLottieRefCallback}
+						ref={dotLottieRef}
 						src="https://lottie.host/a2a56b61-73e4-462a-bbc2-05df3403825e/Q4DOP4n7fM.lottie"
-						loop={true} // Add loop to make it loop
-						autoplay={false} // Turn off autoplay to control it manually
+						loop
+						autoplay={false}
 						mode={isOpen ? "forward" : "reverse"}
-						onClick={play} // Trigger play on click
+						onClick={play}
 						backgroundColor="#ffffff"
 					/>
 				</div>
-
-				{/* Links for Desktop */}
 				<div className="hidden md:flex md:gap-5 lg:gap-10 text-white md:text-md lg:text-xl">
 					{navLinks.map((elem, ind) => (
 						<Link href={elem.slug} key={ind} className="relative group px-1">
@@ -67,7 +59,8 @@ export default function Navbar() {
 			<div
 				className={`flex flex-col items-center -mt-1 bg-[#121212b9] backdrop-blur-lg text-white transition-all duration-300 overflow-hidden ${
 					isOpen ? "max-h-[500px] py-5" : "max-h-0"
-				} md:hidden`}>
+				} md:hidden`}
+			>
 				{navLinks.map((elem, ind) => (
 					<Link
 						href={elem.slug}
