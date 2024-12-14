@@ -58,7 +58,7 @@ export default function Navbar() {
 			</div>
 
 			{/* Mobile Menu */}
-			<div className={`flex flex-col items-center bg-[#121212b9] backdrop-blur-lg text-white transition-all duration-300 overflow-hidden ${isOpen ? "max-h-[500px] py-5" : "max-h-0"} md:hidden`}>
+			<div className={`-mt-2 flex flex-col items-center bg-[#121212b9] backdrop-blur-lg text-white transition-all duration-300 overflow-hidden ${isOpen ? "max-h-[500px] py-5" : "max-h-0"} md:hidden`}>
 				{navLinks.map(({ name, slug }, index) => (
 					<Link href={slug} key={index} className="w-full text-center py-2" onClick={() => setIsOpen(false)}>
 						{name}

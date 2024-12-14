@@ -15,7 +15,7 @@ interface Course {
 	price: string | number;
 }
 
-export default function FeaturedCourses() {
+export function FeaturedCourses() {
     const courses = courseList.courses.filter( (item: Course) => { if(item.isFeatured){ return item}})
 	return (
 		<div className="w-full h-full bg-[#18181b] flex flex-col items-center justify-center relative overflow-hidden mx-auto -mt-1 py-10 md:p-0">
