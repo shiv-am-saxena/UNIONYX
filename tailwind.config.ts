@@ -1,3 +1,8 @@
+/* eslint-disable prefer-const */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-require-imports */
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
