@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
   font-family: 'Pristina';
-  src: url('../../public/fonts/PRISTINA.TTF') format('truetype');
+  src: url('/fonts/PRISTINA.TTF') format('truetype');
   font-style: normal;
 }
 @tailwind base;
