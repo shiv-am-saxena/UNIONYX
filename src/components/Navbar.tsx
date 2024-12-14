@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useRef, useState } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-
+import menu from "@/../public/menu.json";
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false); // Toggle for the mobile menu
 	const pathname = usePathname();
@@ -34,7 +34,8 @@ export default function Navbar() {
 				<div onClick={() => setIsOpen(!isOpen)} className="cursor-pointer md:hidden" style={{ width: "50px", height: "50px" }}>
 					<DotLottieReact
 						ref={dotLottieRef}
-						src="https://lottie.host/a2a56b61-73e4-462a-bbc2-05df3403825e/Q4DOP4n7fM.lottie"
+						src="/menu.json"
+						// src="https://lottie.host/a2a56b61-73e4-462a-bbc2-05df3403825e/Q4DOP4n7fM.lottie"
 						loop
 						autoplay={false}
 						mode={isOpen ? "forward" : "reverse"}
