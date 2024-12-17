@@ -65,7 +65,7 @@ export function Testimonials() {
 
 	return (
 		<div className="h-full py-10 w-full relative flex flex-col items-center justify-center bg-[#18181b]">
-			<h1 className="md:text-6xl text-4xl font-pristina text-white">Testimonials</h1>
+			<h1 className="md:text-6xl text-4xl font-pristina font-semibold tracking-wide text-white">Testimonials</h1>
 			<div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
 				<InfiniteMovingCards items={testimonials} direction="left" speed="normal" className="hidden xl:block w-fit py-40" />
 				<div className="xl:hidden">

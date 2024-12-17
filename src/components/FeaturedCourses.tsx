@@ -20,7 +20,7 @@ export function FeaturedCourses() {
 	return (
 		<div className="w-full h-full bg-[#18181b] flex flex-col items-center justify-center relative overflow-hidden mx-auto -mt-1 py-10 md:p-0">
 			<div className="p-4 relative z-10 w-full flex flex-col items-center text-center gap-10">
-				<h1 className="md:text-6xl text-4xl font-pristina text-white">Featured Courses</h1>
+			<h1 className="md:text-6xl text-4xl font-pristina font-semibold tracking-wide text-white">Featured Courses</h1>
 			</div>
 			<div className="gap-4 w-full p-10 ">
 				<HoverEffect items={courses} />

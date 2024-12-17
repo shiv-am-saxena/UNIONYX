@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { Testimonials } from "@/components/Testimonials";
 import { Contact } from "@/components/Contact";
 import React from "react";
+import Footer from "@/components/Footer";
 
 export default function page() {
 	return (
@@ -11,6 +12,7 @@ export default function page() {
 			<FeaturedCourses />
 			<Testimonials />
 			<Contact />
+			<Footer/>
 		</main>
 	);
 }

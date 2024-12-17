@@ -11,7 +11,7 @@ export function ContactForm() {
 		console.log("Form submitted");
 	};
 	return (
-		<div className="max-w-md w-full mx-0 rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-[#18181b]">
+		<div className="max-w-md w-full py-10 mx-0 rounded-none md:rounded-2xl p-6 md:p-8 shadow-input bg-white dark:bg-[#18181b]">
 			<form className="my-8" onSubmit={handleSubmit}>
 				<div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
 					<LabelInputContainer>
