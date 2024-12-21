@@ -6,7 +6,7 @@ export default function Footer() {
 	return (
 		<div className="h-1/3 py-5 w-full relative flex text-white flex-col items-center justify-center bg-[#18181b]">
 			<div className="border-t border-b py-10 w-[90%] border-white flex items-center justify-between gap-8 flex-col lg:flex-row">
-				<div className="w-fit flex items-center justify-evenly mx-auto lg:mx-0 flex-col">
+				<div className="w-fit flex items-center justify-evenly mx-auto gap-6 lg:mx-0 flex-col">
 					<div className="inline-flex items-center justify-center w-full md:w-fit">
 						<Image src={logo} className="size-14 lg:size-24 " alt="UNIONYX Logo" />{" "}
 						<span className="text-5xl lg:text-8xl bg-gradient-to-br from-slate-50 to-slate-500 tracking-wider bg-clip-text text-transparent font-bold font-montserrat">UNIONYX</span>
