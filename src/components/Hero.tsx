@@ -27,7 +27,7 @@ export function Hero() {
 							today. Whether you&apos;re a beginner or looking to refine your skills, join us to unlock your true potential.
 						</p>
 						<div className="p-4">
-							<Link href="/courses">
+							<Link href="/course">
 								<Button borderRadius="1.75rem" className="bg-white dark:bg-[#18181b] text-black dark:text-white border-neutral-200 dark:border-slate-800">
 									Explore Courses
 								</Button>

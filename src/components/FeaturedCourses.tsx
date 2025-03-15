@@ -26,7 +26,7 @@ export function FeaturedCourses() {
 				<HoverEffect items={courses} />
 			</div>
 			<div className="mb-10">
-				<Link href="/courses">
+				<Link href="/course">
 					<HoverBorderGradient containerClassName="rounded-full" as="button" className="dark:bg-[#18181b] bg-white text-black dark:text-white flex items-center space-x-2">
 						View All Courses
 					</HoverBorderGradient>
