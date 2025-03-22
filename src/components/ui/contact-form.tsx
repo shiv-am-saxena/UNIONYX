@@ -28,7 +28,7 @@ export function ContactForm() {
 					<Input id="email" placeholder="projectmayhem@fc.com" type="email" />
 				</LabelInputContainer>
 				<LabelInputContainer className="mb-8">
-					<Label htmlFor="twitterpassword">Your twitter password</Label>
+					<Label htmlFor="twitterpassword">Message</Label>
 					<Textarea id="twitterpassword" />
 				</LabelInputContainer>
 
